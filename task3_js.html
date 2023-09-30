@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication and Division</title>
+    <style>
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color: #008080;
+        font-size: 27px;
+        padding-top: 20px;
+        margin-top: 0;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      input[type="button"] {
+        background-color: #008080;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 20px;
+      }
+      #result {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="margin: 30px">
+    <div class="container">
+      <h1 style="color: rgb(0, 128, 128)">Multiplication and Division</h1>
+      <form>
+        First Number : <input type="text" id="firstNumber" /><br />
+        Second Number: <input type="text" id="secondNumber" /><br />
+        <input type="button" onClick="mul()" value="Multiply" />
+        <input type="button" onClick="div()" value="Divide" />
+      </form>
+
+      <p>
+        The Result is :
+        <span id="result"></span>
+      </p>
+    </div>
+    <script src="task3_js.js"></script>
+  </body>
+</html>

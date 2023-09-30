@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time</title>
+    <style>
+      .container {
+        width: 350px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color: #008080;
+        font-size: 27px;
+        padding-top: 20px;
+        margin-top: 0;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input {
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      input[type="button"] {
+        background-color: #008080;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 20px;
+      }
+      #result {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="margin: 30px">
+    <div class="container">
+      <h1>Date and Time</h1>
+      <form>
+        Date:
+        <input
+          type="button"
+          title="Show the current date"
+          onClick="showDate();"
+          value="Show Date"
+        />
+        <br />
+        Time:
+        <input
+          type="button"
+          title="Show the current time"
+          onClick="showTime();"
+          value="Show Time"
+        />
+      </form>
+      <p>
+        The Result is : <br />
+        <span id="result"></span>
+      </p>
+    </div>
+    <script src="task4_js.js"></script>
+  </body>
+</html>
